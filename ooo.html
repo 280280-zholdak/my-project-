@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sklep internetowy IPhone</title>
+<link rel="stylesheet" href="CSS/main.css">
+</head>
+<body><link rel="stylesheet" href="CSS/www.js">
+<header>
+  <span>Apple Shop — iPhone 17</span>
+  <button class="cart-btn" onclick="toggleCart()">🛒 Koszyk (<span id="cart-count">0</span>)</button>
+</header>
+
+  <div class="container">
+    <div class="product">
+      <img src="https://img.jabko.ua/image/cache/catalog/products/2025/09/100939/17proCosmic_Orange-420x420.png.webp" alt="iPhone 17" />
+
+      <div class="details">
+        <h2>iPhone 17 Pro Max</h2>
+        <p>
+          Nowy iPhone 17 to przyszłość w Twojej kieszeni.
+Wydajny procesor A19 Bionic, aparat 108 MP, wyświetlacz ProMotion 144 Hz.
+        </p>
+        <div class="price">1 479,00 €</div>
+        <button class="buy-btn" onclick="addToCart()">Kupić</button>
+      </div>
+    </div>
+  </div>
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-content">
+    <h3>Twój koszyk</h3>
+    <ul id="cart-items"></ul>
+    <button onclick="closeCart()" class="close-cart">Zamknąć</button>
+  </div>
+</div>
+ <script src="www.js"></script>
+</body>
